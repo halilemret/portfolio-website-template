@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    width: auto;
+    height: 100px;
+    display: block;
+    background: rgb(0, 0, 0);
+    padding: 0 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#bar {
+    width: 100%;
+    max-width: 1550px;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+.logo {
+    width: 25%;
+    position: relative;
+    padding: 7px 55px 7px 0;
+    min-height: 55px;
+    float: left;
+}
+/* header .logotext {
+    background: #ffbc00;
+    color: black;
+    padding:0.75rem;
+    border: 1px solid #ffbc00;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} */
+header .header-right {
+    width: 75%;
+    position: relative;
+    padding: 7px 55px 7px 5rem;
+    float: right;
+    min-height: 55px;
+    display: block;
+}
+header .header-right ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+header .header-right ul li {
+    padding: 1rem;
+}
+.header-right ul li a {
+    font-size: 13px;
+    color: white;
+    border-bottom: 2px solid #ffbc00;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-right ul li a:hover {
+    font-size: 15px;
+    color: white;
+    border-bottom: 5px solid white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header-right ul li a:active {
+    font-size: 15px;
+    color: #ffbc00;
+    border-bottom: 5px solid white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+/* About Profile */
+
+.icerik {
+    margin-top: unset;
+    width: 100%;
+    max-width: 960px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    margin: 0 auto;
+    
+}
+#hakkimda {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative
+
+}
+.profil {
+    height: auto;
+    background: white;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 8%);
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    
+}
+#profilsol {
+    float: left;
+    width: 41%;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+
+
+}
+#profilsol img {
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+#profilsag {
+    float: right;
+    width: 59%;
+    display: block;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+#merhaba {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500px;
+    line-height: 1.1;
+    display: inline-block;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    position: relative;
+    background: #ffbc00;
+}
+#merhaba::before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent;
+    border-left-color: #ffbc00;
+}
+.profilbaslik {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 300;
+}
+.profilbaslik b {
+    font-weight: 500;
+}
+.profilpozisyon {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid grey;
+    opacity: 0.7;
+}
+.pliste {
+    list-style-type: none;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+.pliste .listebaslik {
+    display: inline-block;
+    font-size: 0.825rem;
+    font-weight: 500;
+    width: 7.5rem;
+}
+.pliste .listeicerik {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    padding-left: 2rem;
+}
+.pliste .listeicerik a {
+    color: grey;
+}
+.socialmedialink {
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #ffbc00;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 8%), 0 1px 4px rgb(0 0 0 / 1%);
+}
+.socialmedialink ul {
+    padding: 0.5rem;
+    text-align: center;
+}
+.socialmedialink ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 25px;
+
+}
+
+
+/* About Text */
+
+.about-text {
+    align-items: center;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    padding-top: 16px;
+}
+.about-text p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Skills */
+.baslik {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 8rem;
+    margin-bottom: -1.5rem;
+    color: rgb(51, 51, 51);
+}
+
+.beceriler ul {
+    float: left;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-right: 3rem;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+.beceriler ul li {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+.beceriler ul li h2 {
+    display: flex;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+.beceriler ul li h2 b{
+    margin-left: auto;
+    font-size: .75em;
+    font-weight: 700;
+    color: #888;
+}
+.beceriler ul li span{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0,.1);
+    overflow: hidden;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.beceriler ul li span span{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #222;
+}
+.beceriler2 ul {
+    float: right;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-left: 3rem;
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+}
+.beceriler2 ul li {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+.beceriler2 ul li h2 {
+    display: flex;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+.beceriler2 ul li h2 b{
+    margin-left: auto;
+    font-size: .75em;
+    font-weight: 700;
+    color: #888;
+}
+.beceriler2 ul li span{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0,.1);
+    overflow: hidden;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.beceriler2 ul li span span{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #222;
+}

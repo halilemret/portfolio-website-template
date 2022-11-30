@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+header .logo {
+    text-align: center;
+    padding: 0.2rem;
+}
+header .header-right {
+    padding: 1rem;
+    padding-top: 0.2rem;
+}
+header .header-right ul {
+    justify-content: center;
+}
+header .header-right ul li a {
+    font-size: 15px;
+
+
+}

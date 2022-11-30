@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+}
+header .header-right ul li {
+    padding: 0.5rem;
+}
+.profil {
+    width: 80%;
+    margin: auto;
+}
+#profilsol img {
+    width: 20%;
+    position:absolute;
+}
+
+.about-text {
+
+ padding-left: 2rem;
+ padding-right: 2rem;
+}
+.socialmedialink {
+    margin: auto;
+    width: 80%;
+} 
